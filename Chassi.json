@@ -1,0 +1,72 @@
+[
+  {
+    "CHASSI": "AeroCool Bolt TG",
+    "f�rg": "svart",
+    "Formfaktor": "ATX",
+    "Moderkortsst�d": "ATX,mATX,Mini-ITX",
+    "Max bredd moderkort": "",
+    "ljudd�mpad": "nej",
+    "F�nstersida": "ja,(h�rdat glas)",
+    "LED-belysning": "ja",
+    "Dammfilter": "nej",
+    "Fl�ktkontoller": "nej",
+    "Expansionsplatser": "7 st",
+    "�vrigt": ""
+  },
+  {
+    "CHASSI": "AeroCool Shard TG inkl. 4st RGB-fl�ktar",
+    "f�rg": "svart",
+    "Formfaktor": "ATX",
+    "Moderkortsst�d": "ATX,mATX,Mini-ITX",
+    "Max bredd moderkort": "",
+    "ljudd�mpad": "nej",
+    "F�nstersida": "ja,(h�rdat glas)",
+    "LED-belysning": "ja,(A-RGB)",
+    "Dammfilter": "ja",
+    "Fl�ktkontoller": "nej",
+    "Expansionsplatser": "7 st",
+    "�vrigt": ""
+  },
+  {
+    "CHASSI": "Fractal Design Define C Svart",
+    "f�rg": "svart",
+    "Formfaktor": "ATX",
+    "Moderkortsst�d": "ATX,mATX,Mini-ITX",
+    "Max bredd moderkort": "",
+    "ljudd�mpad": "ja",
+    "F�nstersida": "nej",
+    "LED-belysning": "nej",
+    "Dammfilter": "ja",
+    "Fl�ktkontoller": "nej",
+    "Expansionsplatser": "7 st",
+    "�vrigt": ""
+  },
+  {
+    "CHASSI": "Kolink Observatory RGB Svart",
+    "f�rg": "svart",
+    "Formfaktor": "ATX",
+    "Moderkortsst�d": "ATX,mATX,Mini-ITX, E-ATX",
+    "Max bredd moderkort": "279 mm",
+    "ljudd�mpad": "nej",
+    "F�nstersida": "ja",
+    "LED-belysning": "ja",
+    "Dammfilter": "ja",
+    "Fl�ktkontoller": "nej",
+    "Expansionsplatser": "7 st",
+    "�vrigt": ""
+  },
+  {
+    "CHASSI": "Phanteks Eclipse P300 Tempered Glass Svart",
+    "f�rg": "svart",
+    "Formfaktor": "ATX, E-ATX",
+    "Moderkortsst�d": "ATX,mATX,Mini-ITX,E-ATX",
+    "Max bredd moderkort": "275 mm",
+    "ljudd�mpad": "nej",
+    "F�nstersida": "ja,(h�rdat glas)",
+    "LED-belysning": "ja,(RGB)",
+    "Dammfilter": "ja",
+    "Fl�ktkontoller": "nej",
+    "Expansionsplatser": "7 st",
+    "�vrigt": "E-ATX max 275mm bredd"
+  }
+]

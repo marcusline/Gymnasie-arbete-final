@@ -10,7 +10,7 @@ console.log(chassi);
 
 
 app.get('/', function (req,res){
-    res.render('index', {rubrik: JSON.stringify(chassi)});
+    res.render('index', {rubrik: JSON.stringify(chassi), text: JSON.stringify(chassi),});
 })
 
 

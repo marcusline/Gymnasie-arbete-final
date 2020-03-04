@@ -1,7 +1,7 @@
 const express = require('express');
 const fs =require('fs');
 const app=express();
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 
 
 let rawdata = fs.readFileSync('Chassi.json');

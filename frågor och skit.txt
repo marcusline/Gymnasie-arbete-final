@@ -1,0 +1,11 @@
+//Behöver hjälp med\\
+
+Json fill information --> tabell/kopiera informationen till en annan div
+
+Meta charset utf-8 funkar inte
+
+
+
+
+// Vad som behövs göra \\
+

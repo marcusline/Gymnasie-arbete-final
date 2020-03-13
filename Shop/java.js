@@ -281,6 +281,37 @@ let products = [
         price: 35,
         inCart: 0
     },
+    //PSU
+    {
+        name: 'Corsair RM750x 750W v2 White Series',
+        tag: 'psu1',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'Corsair RM750X 750W v2',
+        tag: 'psu2',
+        price: 20,
+        inCart: 0
+    },
+    {
+        name: 'Fractal Design EFFEKT 400W',
+        tag: 'psu3',
+        price: 25,
+        inCart: 0
+    },
+    {
+        name: 'Fractal Design Integra M 550W',
+        tag: 'psu4',
+        price: 30,
+        inCart: 0
+    },
+    {
+        name: 'Thermaltake Smart RGB 700W',
+        tag: 'psu5',
+        price: 35,
+        inCart: 0
+    },
 
 
 

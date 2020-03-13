@@ -160,7 +160,7 @@ let products = [
     //Hårdisk
     {
         name: 'Seagate Desktop 1TB',
-        tag: 'hdd1',
+        tag: 'hdd2',
         price: 15,
         inCart: 0
     },

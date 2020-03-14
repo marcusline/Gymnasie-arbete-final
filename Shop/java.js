@@ -17,298 +17,298 @@ let products = [
     },
     {
         name: 'Fractal Design Define C',
-        tag: 'chassi3',
+        tag: 'fractaldesigndefinec',
         price: 25,
         inCart: 0
     },
     {
         name: 'Kolink Observatory RGB',
-        tag: 'chassi4',
+        tag: 'kolinkobservatoryrgb',
         price: 30,
         inCart: 0
     },
     {
         name: 'Phanteks Eclipse P300',
-        tag: 'chassi5',
+        tag: 'phantekseclipsep300',
         price: 35,
         inCart: 0
     },
     //MODERKORT
     {
         name: 'ASUS PRIME B360M-A',
-        tag: 'mod1',
+        tag: 'asusprimeb360m-a',
         price: 15,
         inCart: 0
     },
     {
         name: 'ASUS PRIME Z390-A',
-        tag: 'mod2',
+        tag: 'asusprimez390-a',
         price: 20,
         inCart: 0
     },
     {
         name: 'ASUS ROG STRIX B450-F',
-        tag: 'mod3',
+        tag: 'asusrogstrixb450-f',
         price: 25,
         inCart: 0
     },
     {
         name: 'ASUS ROG STRIX Z390-F',
-        tag: 'mod4',
+        tag: 'asusrogstrixz390-f',
         price: 30,
         inCart: 0
     },
     {
         name: 'Gigabyte X570 AORUS ELITE',
-        tag: 'mod5',
+        tag: 'gigabytex570aoruselite',
         price: 35,
         inCart: 0
     },
     //CPU
     {
         name: 'AMD Ryzen 5 3600',
-        tag: 'cpu1',
+        tag: 'amdryzen53600',
         price: 15,
         inCart: 0
     },
     {
         name: 'AMD Ryzen 9 3900X',
-        tag: 'cpu2',
+        tag: 'amdryzen93900x',
         price: 20,
         inCart: 0
     },
     {
         name: 'Intel Core i5 9600K',
-        tag: 'cpu3',
+        tag: 'intelcorei59600k',
         price: 25,
         inCart: 0
     },
     {
         name: 'Intel Core i7 9700K',
-        tag: 'cpu4',
+        tag: 'intelcorei79700k',
         price: 30,
         inCart: 0
     },
     {
         name: 'Intel Core i9 9900K',
-        tag: 'cpu5',
+        tag: 'intelcorei99900k',
         price: 35,
         inCart: 0
     },
     //GPU
     {
         name: 'GeForce GTX 1660 SUPER',
-        tag: 'gpu1',
+        tag: 'geforcegtx1660super',
         price: 15,
         inCart: 0
     },
     {
         name: 'GeForce RTX 2070 SUPER',
-        tag: 'gpu2',
+        tag: 'geforcertx2070super',
         price: 20,
         inCart: 0
     },
     {
         name: 'GeForce RTX 2080 Ti',
-        tag: 'gpu3',
+        tag: 'geforcertx2080ti',
         price: 25,
         inCart: 0
     },
     {
         name: 'Radeon RX 580',
-        tag: 'gpu4',
+        tag: 'radeonrx580',
         price: 30,
         inCart: 0
     },
     {
         name: 'Radeon RX 5700 XT',
-        tag: 'gpu5',
+        tag: 'radeonrx5700xt',
         price: 35,
         inCart: 0
     },
     //RAM
     {
         name: 'Ballistix 16GB (2x8GB) DDR4',
-        tag: 'ram1',
+        tag: 'ballistix16gb(2x8gb)ddr4',
         price: 15,
         inCart: 0
     },
     {
         name: 'Corsair 8GB (2x4GB) DDR4',
-        tag: 'ram2',
+        tag: 'corsair8gb(2x4gb)ddr4',
         price: 20,
         inCart: 0
     },
     {
         name: 'Corsair 16GB (2x8GB) DDR4',
-        tag: 'ram3',
+        tag: 'corsair16gb(2x8gb)ddr4',
         price: 25,
         inCart: 0
     },
     {
         name: 'Corsair 32GB (2x16GB) DDR4',
-        tag: 'ram4',
+        tag: 'corsair32gb(2x16gb)ddr4',
         price: 30,
         inCart: 0
     },
     {
         name: 'G.Skill 16GB (2x8GB) DDR4',
-        tag: 'ram5',
+        tag: 'g.skillgb(2x8gb)ddr4',
         price: 35,
         inCart: 0
     },
     //Hårdisk
     {
         name: 'Seagate Desktop 1TB',
-        tag: 'hdd2',
+        tag: 'seagatedesktop2tb',
         price: 15,
         inCart: 0
     },
     {
         name: 'Seagate Desktop 2TB',
-        tag: 'hdd2',
+        tag: 'seagatedesktop2tb',
         price: 20,
         inCart: 0
     },
     {
         name: 'Seagate Desktop 3TB',
-        tag: 'hdd3',
+        tag: 'seagatedesktop3tb',
         price: 25,
         inCart: 0
     },
     {
         name: 'Seagate Desktop 4TB',
-        tag: 'hdd4',
+        tag: 'seagatedesktop4tb',
         price: 30,
         inCart: 0
     },
     {
         name: 'WD Blue 1TB',
-        tag: 'hdd5',
+        tag: 'wdbluetd1',
         price: 35,
         inCart: 0
     },
     //SSD
     {
         name: 'Crucial MX500 1TB 2.5',
-        tag: 'ssd1',
+        tag: 'crucialmx5001tb2.5',
         price: 15,
         inCart: 0
     },
     {
         name: 'Kingston A400 480GB 2.5',
-        tag: 'ssd2',
+        tag: 'kingstona400480gb2.5',
         price: 20,
         inCart: 0
     },
     {
         name: 'Samsung 860 EVO 1TB',
-        tag: 'ssd3',
+        tag: 'samsunbg860evo1tb',
         price: 25,
         inCart: 0
     },
     {
         name: 'Samsung 970 EVO Plus 1TB',
-        tag: 'ssd4',
+        tag: 'samsung970evoplus1tb',
         price: 30,
         inCart: 0
     },
     {
         name: 'Toshiba OCZ TR200 240GB',
-        tag: 'ssd5',
+        tag: 'toshibaocztr200240gb',
         price: 35,
         inCart: 0
     },
     //fläkt
     {
         name: 'Corsair LL Series LL120',
-        tag: 'flk1',
+        tag: 'corsairllseriesll120',
         price: 15,
         inCart: 0
     },
     {
         name: 'Corsair ML120 Basic',
-        tag: 'flk2',
+        tag: 'corsairml120basic',
         price: 20,
         inCart: 0
     },
     {
         name: 'Corsair ML140 PRO',
-        tag: 'flk3',
+        tag: 'corsairml140pro',
         price: 25,
         inCart: 0
     },
     {
         name: 'Noctua NF-A12x25 PWM',
-        tag: 'flk4',
+        tag: 'noctunanf-a12x25pwm',
         price: 30,
         inCart: 0
     },
     {
         name: 'Noctua NF-A14 140mm',
-        tag: 'flk5',
+        tag: 'noctunanf-a14140mm',
         price: 35,
         inCart: 0
     },
     //CPU KYLNING
     {
-        name: 'Corsair LL Series LL120',
-        tag: 'cp1',
+        name: 'be quiet! Dark Rock Pro 4',
+        tag: 'bequiet!darkrockpro4',
         price: 15,
         inCart: 0
     },
     {
-        name: 'Corsair ML120 Basic',
-        tag: 'cp2',
+        name: 'be quiet! Pure Rock',
+        tag: 'bequiet!purerock',
         price: 20,
         inCart: 0
     },
     {
-        name: 'Corsair ML140 PRO',
-        tag: 'cp3',
+        name: 'Cooler Master MasterAir MA610P',
+        tag: 'coolermastermasterairma610p',
         price: 25,
         inCart: 0
     },
     {
-        name: 'Noctua NF-A12x25 PWM',
-        tag: 'cp4',
+        name: 'Corsair Hydro H100i RGB Platinum',
+        tag: 'corsairhydroh100irgbplatinum',
         price: 30,
         inCart: 0
     },
     {
-        name: 'Noctua NF-A14 140mm',
-        tag: 'cp5',
+        name: 'Noctua NH-U12A',
+        tag: 'noctunanh-u12a',
         price: 35,
         inCart: 0
     },
     //PSU
     {
         name: 'Corsair RM750x 750W v2 White Series',
-        tag: 'psu1',
+        tag: 'corsairrm750x750wv2whiteseries',
         price: 15,
         inCart: 0
     },
     {
         name: 'Corsair RM750X 750W v2',
-        tag: 'psu2',
+        tag: 'corsairrm750wv2',
         price: 20,
         inCart: 0
     },
     {
         name: 'Fractal Design EFFEKT 400W',
-        tag: 'psu3',
+        tag: 'fractaldesigneffekt400w',
         price: 25,
         inCart: 0
     },
     {
         name: 'Fractal Design Integra M 550W',
-        tag: 'psu4',
+        tag: 'fractaldesignintegram550w',
         price: 30,
         inCart: 0
     },
     {
         name: 'Thermaltake Smart RGB 700W',
-        tag: 'psu5',
+        tag: 'thermaltakesmartrbg700w',
         price: 35,
         inCart: 0
     },
@@ -453,12 +453,14 @@ function displayCart(){
 function deleteButtons(){
     let deleteButtons = document.querySelectorAll('.product ion-icon')
     let productName;
+    let productNumbers = localStorage.getItem('CartNumbers');
 
 
     for (let i=0; i < deleteButtons.length; i++){
         deleteButtons[i].addEventListener('click', () => {
             productName =deleteButtons[i].parentElement.textContent.trim().toLowerCase().replace(/ /g, '');
             console.log(productName);
+            console.log(productNumbers);
         })
     }
 }

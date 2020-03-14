@@ -203,7 +203,7 @@ let products = [
     },
     {
         name: 'Samsung 860 EVO 1TB',
-        tag: 'samsunbg860evo1tb',
+        tag: 'samsung860evo1tb',
         price: 25,
         inCart: 0
     },

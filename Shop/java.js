@@ -290,7 +290,7 @@ let products = [
     },
     {
         name: 'Corsair RM750X 750W v2',
-        tag: 'corsairrm750wv2',
+        tag: 'corsairrm750x750wv2',
         price: 20,
         inCart: 0
     },
@@ -308,7 +308,7 @@ let products = [
     },
     {
         name: 'Thermaltake Smart RGB 700W',
-        tag: 'thermaltakesmartrbg700w',
+        tag: 'thermaltakesmartrgb700w',
         price: 35,
         inCart: 0
     },

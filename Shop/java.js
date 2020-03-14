@@ -11,7 +11,7 @@ let products = [
     },
     {
         name: 'AeroCool Shard TG',
-        tag: 'chassi2',
+        tag: 'aerocoolshardtg',
         price: 20,
         inCart: 0
     },

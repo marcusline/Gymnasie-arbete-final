@@ -160,7 +160,7 @@ let products = [
     //Hårdisk
     {
         name: 'Seagate Desktop 1TB',
-        tag: 'seagatedesktop2tb',
+        tag: 'seagatedesktop1tb',
         price: 15,
         inCart: 0
     },
@@ -184,7 +184,7 @@ let products = [
     },
     {
         name: 'WD Blue 1TB',
-        tag: 'wdbluetd1',
+        tag: 'wdblue1tb',
         price: 35,
         inCart: 0
     },
@@ -240,13 +240,13 @@ let products = [
     },
     {
         name: 'Noctua NF-A12x25 PWM',
-        tag: 'noctunanf-a12x25pwm',
+        tag: 'noctuanf-a12x25pwm',
         price: 30,
         inCart: 0
     },
     {
         name: 'Noctua NF-A14 140mm',
-        tag: 'noctunanf-a14140mm',
+        tag: 'noctuanf-a14140mm',
         price: 35,
         inCart: 0
     },
@@ -277,7 +277,7 @@ let products = [
     },
     {
         name: 'Noctua NH-U12A',
-        tag: 'noctunanh-u12a',
+        tag: 'noctuanh-u12a',
         price: 35,
         inCart: 0
     },

@@ -3,7 +3,7 @@
     "CHASSI": "AeroCool Bolt TG",
     "f�rg": "svart",
     "Formfaktor": "ATX",
-    "Moderkortsst�d": "ATX,mATX,Mini-ITX",
+    "Moderkortsst�d": ["ATX","mATX","Mini-ITX"],
     "Max bredd moderkort": "",
     "ljudd�mpad": "nej",
     "F�nstersida": "ja,(h�rdat glas)",

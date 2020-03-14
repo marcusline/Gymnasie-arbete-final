@@ -153,7 +153,7 @@ let products = [
     },
     {
         name: 'G.Skill 16GB (2x8GB) DDR4',
-        tag: 'g.skillgb(2x8gb)ddr4',
+        tag: 'g.skill16gb(2x8gb)ddr4',
         price: 35,
         inCart: 0
     },

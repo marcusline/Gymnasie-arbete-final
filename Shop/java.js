@@ -5,7 +5,7 @@ let carts = document.querySelectorAll('.add-cart');
 let products = [
     {
         name: 'AeroCool Bolt TG',
-        tag: 'chassi1',
+        tag: 'aerocoolbolttg',
         price: 15,
         inCart: 0
     },
@@ -413,11 +413,11 @@ function displayCart(){
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
-            <div class="products"> 
+            <div class="product"> 
                 <ion-icon name="close-circle-outline"></ion-icon>
                 <img src="images/${item.tag}.jpg"></img>
                 <span>${item.name}</span>
-            <div>
+            </div>
 
                 <div class="price">${item.price}kr</div>
 
@@ -431,6 +431,7 @@ function displayCart(){
                 ${item.inCart * item.price}kr
                 </div>
                 `;
+                
             
         });
         //Total av kostnaden.
@@ -444,6 +445,21 @@ function displayCart(){
              </h4>
         `;
 
+    }
+    deleteButtons();
+}
+
+//Delete function för button Ion-icon
+function deleteButtons(){
+    let deleteButtons = document.querySelectorAll('.product ion-icon')
+    let productName;
+
+
+    for (let i=0; i < deleteButtons.length; i++){
+        deleteButtons[i].addEventListener('click', () => {
+            productName =deleteButtons[i].parentElement.textContent.trim().toLowerCase().replace(/ /g, '');
+            console.log(productName);
+        })
     }
 }
 

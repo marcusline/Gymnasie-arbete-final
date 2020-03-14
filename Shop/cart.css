@@ -74,9 +74,9 @@ li a{
 
 .container,
 .product-container {
-    display: flex;
+    display: flex; 
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     margin-top: 50px;
     padding-bottom: 100px;
 }
@@ -89,7 +89,9 @@ li a{
 }
 
 .picture {
-    width: 200px;
+     width: 200px;
+    
+    
     
 }
 
@@ -148,7 +150,7 @@ li a{
     cursor: pointer;
 }
 
-.products ion-icon{
+.product ion-icon{
     align-items: center;
 }
 
@@ -171,39 +173,40 @@ li a{
 
 .price{
     width: 15%;
+    border-bottom: 1px solid lightgray;
     display: flex;
     align-items: center;
-    position: absolute;
-    left: 52%;
+ /*   position: absolute;
+    left: 52%; */
     
     
 }
 
 .quantity{
     width: 30%;
+    border-bottom: 1px solid lightgray;
     display: flex;
     align-items: center;
-    position: absolute;
-    left: 57%; 
+   /* position: absolute;
+    left: 57%; */
     
 }
 
 .total{
     width: 10%;
+    border-bottom: 1px solid lightgray;
     display: flex;
     align-items: center;
-     position: absolute;
-    left: 67%;
+   /*  position: absolute;
+    left: 67%; */
     
 }
 
 
-
-
-.products{
+.product{
     width: 45%;
     display: flex;
-    
+    justify-content: space-around;
     align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid lightgray;
@@ -216,13 +219,13 @@ li a{
     cursor: pointer;
 }
 
-.products{
+.product{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.products img {
+.product img {
     width: 75px;
 }
 

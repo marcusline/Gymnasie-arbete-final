@@ -451,16 +451,32 @@ function displayCart(){
 
 //Delete function för button Ion-icon
 function deleteButtons(){
-    let deleteButtons = document.querySelectorAll('.product ion-icon')
+    let deleteButtons = document.querySelectorAll('.product ion-icon');
     let productName;
     let productNumbers = localStorage.getItem('CartNumbers');
+    let cartItems = localStorage.getItem('ProductsInCart');
+    cartItems = JSON.parse(cartItems);
+    let cartCost = localStorage.getItem('totalcost')
+    
+    
 
 
     for (let i=0; i < deleteButtons.length; i++){
         deleteButtons[i].addEventListener('click', () => {
-            productName =deleteButtons[i].parentElement.textContent.trim().toLowerCase().replace(/ /g, '');
-            console.log(productName);
-            console.log(productNumbers);
+            productName = deleteButtons[i].parentElement.textContent.trim().toLowerCase().replace(/ /g, '');
+
+            
+
+
+           localStorage.setItem('CartNumbers', productNumbers - cartItems[productName].inCart);
+
+           localStorage.setItem('totalcost', cartCost - ( cartItems[productName].price * cartItems[productName].inCart));
+
+           delete cartItems[productName];
+           localStorage.setItem('ProductsInCart', JSON.stringify(cartItems));
+
+           displayCart();
+           onLoadCartNumbers();
         })
     }
 }

@@ -153,7 +153,7 @@ let products = [
     },
     {
         name: 'G.Skill 16GB (2x8GB) DDR4',
-        tag: 'g.skillgb(2x8gb)ddr4',
+        tag: 'g.skill16gb(2x8gb)ddr4',
         price: 35,
         inCart: 0
     },
@@ -203,7 +203,7 @@ let products = [
     },
     {
         name: 'Samsung 860 EVO 1TB',
-        tag: 'samsunbg860evo1tb',
+        tag: 'samsung860evo1tb',
         price: 25,
         inCart: 0
     },

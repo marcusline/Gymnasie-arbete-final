@@ -1,11 +1,11 @@
-//Behöver hjälp med\\
+//Behï¿½ver hjï¿½lp med\\
 
 Json fill information --> tabell/kopiera informationen till en annan div
 
 Meta charset utf-8 funkar inte
 
+ask bond about submit and how to use.
 
 
-
-// Vad som behövs göra \\
+// Vad som behï¿½vs gï¿½ra \\
 

@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-compatible" content="ie=edge">
         <link rel="stylesheet" href="cart.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="model-test.css">
+
         <title>Shopping cart</title>
     </head>
         <body>
@@ -28,7 +30,42 @@
                     <h1 class="middle">Chassi</h1>
                     <div class="container">
                         <div class="image">
-                            <img onclick="vidclick()" src="images/aerocoolbolttg.jpg" alt="error" class="picture"> 
+                            
+                            <img onclick="vidclick()" src="images/aerocoolbolttg.jpg" alt="error" class="picture">
+                            <!-------------------------MODAL--------------------------------------->
+                            <div id="myModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                <span onclick="spanClick()" class="close">&times;</span>
+                                
+                                <div>
+                                    <table class="table table-dark">
+                                    <thead>
+                                    
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        </tr>
+                                        <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        </tr>
+                                        <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                            
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                    
+                                </div>
+                                
+                                </div>
+                            
+                            </div>
+        <!---------------------------------------------------------------->
                             <h3 class="textchange">AeroCool Bolt TG</h3>
                             <h3 class="textchange">Pris 15kr</h3>
                             <a class="add-cart cart1" href="#">Add cart</a>
@@ -470,6 +507,8 @@
 
                     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
                     <script src="java.js"></script>
+                    <script src="model-test.js"></script>
+
 
         </body>
 </html>

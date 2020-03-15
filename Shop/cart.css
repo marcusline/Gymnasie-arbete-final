@@ -252,11 +252,39 @@ li a{
 /* INDEX */
 
 .box1{
-    background-color:#FF8C00;
+    background-color:white;
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
-    height: 150px;
+    height: 300px;
+    position: relative;
+}
+
+.Bygg{
+    background-color:green;
+    background-repeat: no-repeat;
+    width: 50%;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    border: 3px solid orange;
+}
+
+.Information{
+    background-color:blue;
+    width: 50%;
+    height: 300px;
+    margin-left:50% ;
+    border: 3px solid black;
+    
+}
+
+.bottom{
+    background-color: grey;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    height: 187px;
     position: relative;
 }
 

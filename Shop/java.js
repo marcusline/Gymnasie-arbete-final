@@ -330,7 +330,7 @@ carts[i].addEventListener('click', () =>{
 
 
 //Räknar och sparar items i CART
-function onLoadCartNumbers(){
+function onLoadcartNumbers(){
     let productNumbers = localStorage.getItem('cartNumbers');
 
     if(productNumbers){
@@ -469,7 +469,7 @@ function displayCart(){
 function deleteButtons(){
     let deleteButtons = document.querySelectorAll('.product ion-icon');
     let productName;
-    let productNumbers = localStorage.getItem('CartNumbers');
+    let productNumbers = localStorage.getItem('cartNumbers');
     let cartItems = localStorage.getItem('ProductsInCart');
     //String till object
     cartItems = JSON.parse(cartItems);
@@ -485,7 +485,7 @@ function deleteButtons(){
             
 
 
-           localStorage.setItem('CartNumbers', productNumbers - cartItems[productName].inCart);
+           localStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart);
 
            localStorage.setItem('totalcost', cartCost - ( cartItems[productName].price * cartItems[productName].inCart));
 
@@ -493,7 +493,7 @@ function deleteButtons(){
            localStorage.setItem('ProductsInCart', JSON.stringify(cartItems));
 
            displayCart();
-           onLoadCartNumbers();
+           onLoadcartNumbers();
         })
     }
 }
@@ -556,5 +556,5 @@ function manageQuantity(){
 }
 
 //Laddar in saker som finns i cart
-onLoadCartNumbers();
+onLoadcartNumbers();
 displayCart();

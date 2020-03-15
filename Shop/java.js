@@ -1,7 +1,9 @@
+
 let carts = document.querySelectorAll('.add-cart');
 
 
 //JSON Upplägg
+//Chassi
 let products = [
     {
         name: 'AeroCool Bolt TG',
@@ -329,7 +331,7 @@ carts[i].addEventListener('click', () =>{
 
 //Räknar och sparar items i CART
 function onLoadCartNumbers(){
-    let productNumbers = localStorage.getItem('CartNumbers');
+    let productNumbers = localStorage.getItem('cartNumbers');
 
     if(productNumbers){
         document.querySelector('.cart span').textContent = productNumbers;
@@ -338,20 +340,26 @@ function onLoadCartNumbers(){
 
 
 //Nummer av items i cart och lägger till fler per klick
-function cartNumbers(product){
+function cartNumbers(product, action){
     
-    let productNumbers = localStorage.getItem('CartNumbers');
-    
+    let productNumbers = localStorage.getItem('cartNumbers');
     productNumbers = parseInt(productNumbers);
 
-    if(productNumbers){
-        localStorage.setItem('CartNumbers', productNumbers + 1);
+    let cartItems = localStorage.getItem('ProductsInCart');
+    cartItems = JSON.parse(cartItems);
+
+    if (action == "decrease"){
+        localStorage.setItem('cartNumbers', productNumbers - 1);
+        document.querySelector('.cart span').textContent = productNumbers - 1;
+    }else if( productNumbers ){
+        localStorage.setItem("cartNumbers", productNumbers + 1);
         document.querySelector('.cart span').textContent = productNumbers + 1;
     } else {
-        localStorage.setItem('CartNumbers', 1);
+        localStorage.setItem('cartNumbers', 1);
         document.querySelector('.cart span').textContent = 1;
     }
-    
+
+
     setItems(product);
 }
 
@@ -359,6 +367,7 @@ function cartNumbers(product){
 //Products
 function setItems(product){
 let cartItems = localStorage.getItem('ProductsInCart');
+//String till object
 cartItems = JSON.parse(cartItems)
 
 
@@ -385,14 +394,19 @@ localStorage.setItem('ProductsInCart', JSON.stringify(cartItems));
 
 
 //Räknar ut kostnad
-function totalcost(product){
+function totalcost(product, action){
     let cartCost = localStorage.getItem('totalcost');
     cardCost = parseInt(cartCost);
     
 
     console.log(cartCost);
 
-    if (cartCost != null){
+    if(action == "decrease"){
+        cartCost = parseInt(cartCost);
+
+        localStorage.setItem('totalcost',cartCost - product.price);
+    
+    }else if (cartCost != null){
         cartCost = parseInt(cartCost);
         localStorage.setItem("totalcost", cartCost + product.price);
     } else{
@@ -405,6 +419,7 @@ function totalcost(product){
 //Display cart i cart, laddar in när sidan startar
 function displayCart(){
     let cartItems = localStorage.getItem("ProductsInCart");
+    //String till object
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector(".products")
     let cartCost = localStorage.getItem('totalcost');
@@ -422,9 +437,9 @@ function displayCart(){
                 <div class="price">${item.price}kr</div>
 
                 <div class="quantity">
-                <ion-icon name="arrow-back-circle-outline"></ion-icon>
+                <ion-icon class = "decrease" name="arrow-back-circle-outline"></ion-icon>
                 <span>${item.inCart}</span>
-                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                <ion-icon class = "increase" name="arrow-forward-circle-outline"></ion-icon>
                 </div>
                 
                 <div class="total">
@@ -447,6 +462,7 @@ function displayCart(){
 
     }
     deleteButtons();
+    manageQuantity();
 }
 
 //Delete function för button Ion-icon
@@ -455,6 +471,7 @@ function deleteButtons(){
     let productName;
     let productNumbers = localStorage.getItem('CartNumbers');
     let cartItems = localStorage.getItem('ProductsInCart');
+    //String till object
     cartItems = JSON.parse(cartItems);
     let cartCost = localStorage.getItem('totalcost')
     
@@ -477,6 +494,63 @@ function deleteButtons(){
 
            displayCart();
            onLoadCartNumbers();
+        })
+    }
+}
+
+//Tar upp klasserna från buttons och ger de värdern för increase och decrease
+function manageQuantity(){
+    let decreaseButtons = document.querySelectorAll('.decrease');
+    let increaseButtons = document.querySelectorAll('.increase');
+    let cartItems = localStorage.getItem('ProductsInCart');
+    let currentQuantity = 0;
+    let currentProduct = "";
+    //String till object
+    cartItems = JSON.parse(cartItems);
+    console.log(cartItems);
+    
+    //Läser av quantity av decrease
+    for(let i=0; i< decreaseButtons.length; i++){
+        decreaseButtons[i].addEventListener('click', () => {
+            currentQuantity = decreaseButtons[i].parentElement.querySelector('span').textContent;
+            console.log(currentQuantity);
+            // går in i product och hämtar name.
+            currentProduct = decreaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLowerCase().replace(/ /g, '').trim();
+            console.log(currentProduct);
+
+
+            //Decrease metod
+            if(cartItems[currentProduct].inCart > 1 ){
+            cartItems[currentProduct].inCart -=  1;
+            cartNumbers(cartItems[currentProduct], "decrease" );
+            totalcost(cartItems[currentProduct], "decrease");
+            localStorage.setItem('ProductsInCart', JSON.stringify(cartItems));
+            displayCart();
+            }
+        });
+    }
+    //Läser av quantity av increase
+    for(let i=0; i< increaseButtons.length; i++){
+        increaseButtons[i].addEventListener('click', () => {
+            currentQuantity = increaseButtons[i].parentElement.querySelector('span').textContent;
+            console.log(currentQuantity);
+
+
+            
+            
+            // går in i product och hämtar name.
+            currentProduct = increaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLowerCase().replace(/ /g, '').trim();
+            console.log(currentProduct);
+
+
+            //increase metod
+            
+            cartItems[currentProduct].inCart +=  1;
+            cartNumbers(cartItems[currentProduct]);
+            totalcost(cartItems[currentProduct]);
+            localStorage.setItem('ProductsInCart', JSON.stringify(cartItems));
+            displayCart();
+            
         })
     }
 }

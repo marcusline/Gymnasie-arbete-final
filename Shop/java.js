@@ -2,6 +2,7 @@
 let carts = document.querySelectorAll('.add-cart');
 
 
+
 //JSON Upplägg
 //Chassi
 let products = [

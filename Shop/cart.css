@@ -137,7 +137,7 @@ li a{
 /* ---------- CART ---------------*/
 
 .product-container{
-    max-width: 650px;
+    max-width: 1000px;
     justify-content: space-around;
     margin: 0 auto;
     margin-top: 50px;
@@ -162,7 +162,7 @@ li a{
 
 .product-header{
     width: 100%;
-    max-width: 650px;
+    max-width: 1000px;
     display: flex;
     justify-content:flex-start;
     border-bottom: 4px solid lightgrey;
@@ -170,64 +170,68 @@ li a{
 }
 
 .product-title{
-    width: 45%;
+    width: 40%;
+    
 }
 
 .price{
-    width: 15%;
-    border-bottom: 1px solid lightgray;
+    width: 20%;
+    border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center;
- /*   position: absolute;
-    left: 52%; */
+ 
     
     
 }
 
 .quantity{
     width: 30%;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center;
-   /* position: absolute;
-    left: 57%; */
+
     
 }
 
 .total{
     width: 10%;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center;
-   /*  position: absolute;
-    left: 67%; */
-    
 }
 
 
 .product{
-    width: 45%;
+    width: 35%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid lightgray;
+    padding: 20px 0;
+    margin-right: 40px;
+    border-bottom: 1px solid lightgrey;
     
 }
 
+.product span{
+font-size: small;
+text-align: center;
+margin: 0 auto;
+}
 
 
-.product ion-icon{
+
+
+.products ion-icon{
     cursor: pointer;
 }
 
-.product{
+.products{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.product img {
+.products img {
     width: 75px;
 }
 

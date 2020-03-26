@@ -27,6 +27,7 @@ header{
     padding: 0 !important;
     margin: 0 !important;
     background-color: rgba(10, 10, 10, 0.3);
+    border-bottom: 8px solid lightgrey;
 }
 
 nav{
@@ -90,6 +91,15 @@ li a{
     overflow: hidden; 
 }
 
+.image img{
+    width: auto;
+}
+
+.image h3{
+    text-align: center;
+    
+}
+
 .picture {
      width: 200px;
     
@@ -127,12 +137,11 @@ li a{
     border-top: 4px solid lightgrey;
 }
 
-.textchange{
+.middleweird{
     text-align: center;
-    
-    
-    
 }
+
+
 
 /* ---------- CART ---------------*/
 
@@ -271,7 +280,7 @@ margin: 0 auto;
     background-position: center;
     height: 300px;
     position: relative;
-    border: 3px solid orange;
+    
 }
 
 .Information{
@@ -279,7 +288,7 @@ margin: 0 auto;
     width: 50%;
     height: 300px;
     margin-left:50% ;
-    border: 3px solid black;
+    
     
 }
 
@@ -298,6 +307,7 @@ margin: 0 auto;
     width: 40%;
     right: 5%;
     top: 20px;
+    border-bottom: 1px solid lightgrey;
 }
 
 #text2{
@@ -305,6 +315,7 @@ margin: 0 auto;
     width: 40%;
     right: 5%;
     top: 50px;
+    border-bottom: 1px solid lightgrey;
 }
 
 #text3{
@@ -313,6 +324,7 @@ margin: 0 auto;
     position: absolute;
     left: 5%;
     top: 20px;
+    border-bottom: 1px solid lightgrey;
 }
 
 #text4{
@@ -320,6 +332,7 @@ margin: 0 auto;
     position: absolute;
     left: 5%;
     top: 50px;
+    border-bottom: 1px solid lightgrey;
 
 }
 

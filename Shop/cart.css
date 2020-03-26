@@ -260,7 +260,17 @@ margin: 0 auto;
     width: 10%;
 }
 
+.button{
+    width: 20%;
+    height: 50px;
+    background-color: royalblue;
+    border: skyblue 2px solid;
+}
 
+.button h2{
+    text-align: center;
+    margin-top: 10px;
+}
 
 /* INDEX */
 

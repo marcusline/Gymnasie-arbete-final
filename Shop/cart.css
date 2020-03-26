@@ -269,7 +269,7 @@ margin: 0 auto;
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
-    height: 300px;
+    height: 350px;
     position: relative;
 }
 
@@ -278,7 +278,7 @@ margin: 0 auto;
     background-repeat: no-repeat;
     width: 50%;
     background-position: center;
-    height: 300px;
+    height: 350px;
     position: relative;
     
 }
@@ -286,18 +286,18 @@ margin: 0 auto;
 .Information{
     background-color:blue;
     width: 50%;
-    height: 300px;
+    height: 350px;
     margin-left:50% ;
     
     
 }
 
 .bottom{
-    background-color: grey;
+    background-color: lightgrey;
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
-    height: 187px;
+    height: 87px;
     position: relative;
 }
 
@@ -316,6 +316,7 @@ margin: 0 auto;
     right: 5%;
     top: 50px;
     border-bottom: 1px solid lightgrey;
+    margin-top: 20px;
 }
 
 #text3{
@@ -333,6 +334,7 @@ margin: 0 auto;
     left: 5%;
     top: 50px;
     border-bottom: 1px solid lightgrey;
+    margin-top: 20px;
 
 }
 
